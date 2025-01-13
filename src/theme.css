@@ -1,0 +1,34 @@
+/* Import IBM Plex Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Apply the theme to an ID we'll use in the Layout */
+#main-gradient {
+  /* Font */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  /* Text color */
+  color: white;
+
+  /* Animated gradient background */
+  background: linear-gradient(135deg, #ff0077, #7700ff, #ff0077, #7700ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  /* Fill the screen, if needed */
+  min-height: 100vh;
+  margin: 0; /* Optional, but useful for removing default margins */
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
